@@ -1,0 +1,17 @@
+{
+  "name": "Eric Carlisle : UI Developer, UX Designer",
+  "title": "Eric Carlisle : UI Developer, UX Designer",
+  "description": "This is Eric Carlisle's blog.",
+  "publisher": "Eric Carlisle",
+  "url": "https://www.ericcarlisle.com",
+  "lang": "en",
+  "locale": "en_US",
+  "socialPages": [
+    "https://github.com/ecarlisle",
+    "https://twitter.com/eric_carlisle",
+    "https://www.linkedin.com/in/ericcarlisle"
+  ],
+  "facebookAppId": "372474503176455",
+  "facebookPageId": "102276088224812",
+  "twitterId": "@eric_carlisle"
+}

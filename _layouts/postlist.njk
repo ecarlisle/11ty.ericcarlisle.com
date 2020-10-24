@@ -1,0 +1,28 @@
+<h1 class="pb2 bb1">{{ title }}</h1>
+<ul role="list" class="article-list |">
+{%- for post in posts | reverse -%}
+  <li role="listitem" class="| pb2{% if not loop.last %} bb1{% endif %}">
+    <article role="article">
+      <a href="{{ post.url }}"> 
+        <h2>{{ post.data.title }}</h2>
+      </a>
+      {%- if post.data.date %}
+      <strong class="| dbl mb2">{{ post.data.date | dateFormat }}</strong>
+      {%- endif -%}
+      {% if post.data.page.excerpt %}
+        {% if post.data.image %}
+        <a href="{{post.url}}">
+          <img src="{{post.data.image.src}}" 
+                alt="{{post.data.image.alt}}"
+                class="{{post.data.image.class}} | mb1" 
+                height="{{post.data.image.height}}"
+                weight="{{post.data.image.width}}"
+                align="right"
+                loading="lazy" />
+        </a>
+        {% endif %}
+        {{ post.data.page.excerpt | renderUsingMarkdown | safe }}
+      {% endif %}
+    </article>
+  </li>
+{%- endfor -%}

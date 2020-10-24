@@ -1,0 +1,15 @@
+---
+title: "Articles"
+description: "This is the description"
+layout: base.njk
+permalink: /articles/
+og_type: website
+eleventyNavigation:
+  key: Articles
+  order: 2
+pagination:
+  data: collections.article
+  size: 20
+  alias: posts
+---
+{% include "_layouts/postlist.njk" %}

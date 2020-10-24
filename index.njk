@@ -1,0 +1,16 @@
+---
+title: "Home"
+meta_title: "Eric Carlisle : UI Developer, UX Designer"
+description: "This is the description"
+layout: base.njk
+permalink: /
+og_type: website
+eleventyNavigation:
+  key: Home
+  order: 1
+pagination:
+  data: collections.article
+  size: 20
+  alias: posts
+---
+{% include "_layouts/postlist.njk" %}
