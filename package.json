@@ -34,7 +34,7 @@
     "serve": "npm-run-all --parallel serve:11ty watch",
     "serve:11ty": "ELEVENTY_ENV=development npx @11ty/eleventy --serve",
     "watch": "webpack --config webpack.base.js --mode production --watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "test --passWithNoTests"
   },
   "dependencies": {
     "postcss": "^8.1.1"
