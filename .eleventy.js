@@ -29,6 +29,7 @@ module.exports = function(eleventyConfig) {
 
   // passthroughs
   eleventyConfig.addPassthroughCopy('img/**/*.*');
+  eleventyConfig.addPassthroughCopy('css/**/*.*');
 
   // transforms
   eleventyConfig.addTransform('htmlmin', function(content, outputPath) {
