@@ -3,10 +3,10 @@ node_js:
   - 12
 before_script:
   - npm install @11ty/eleventy -g
-script: eleventy --pathprefix="/"
+script: eleventy --pathprefix="/11ty.ericcarlisle.com/"
 deploy:
   local-dir: dist
-  provider: pages
+  provider: /pages
   skip-cleanup: true
   github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
   keep-history: true
